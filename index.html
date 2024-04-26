@@ -8,6 +8,28 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <link rel="stylesheet" href="css/leaflet.css">
         <link rel="stylesheet" href="css/L.Control.Layers.Tree.css">
+        <style>
+            .leaflet-control-layers-toggle:after{ 
+               
+                content:"Map Layers"; 
+                color:#000 ;
+                font:bold;   
+            }
+            .leaflet-control-layers-toggle{
+                text-indent: 30px;
+                text-wrap:nowrap;
+                font-size:20px;
+                width:0px;
+                background-position:0px 20%;
+                background-size: 35px;
+                padding-top:2px;
+                padding-bottom:1px;
+                padding-left:10px;
+                padding-right:105px;
+                text-decoration:solid;
+                line-height:40px;
+            }
+            </style>
         <link rel="stylesheet" href="css/qgis2web.css">
         <link rel="stylesheet" href="css/fontawesome-all.min.css">
         <link rel="stylesheet" href="css/leaflet-measure.css">
@@ -298,6 +320,7 @@
             //openedSymbol: '&#8863; &#x1f5c1;',
             //collapseAll: 'Collapse all',
             //expandAll: 'Expand all',
+            position:'topright',
             collapsed: true,
         });
         lay.addTo(map);
